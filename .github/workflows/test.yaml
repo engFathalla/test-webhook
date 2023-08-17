@@ -1,0 +1,11 @@
+name: trigger
+on: 
+    repository_dispatch:
+        types: [build]
+
+jobs:
+    Scan_Build_Deploy:
+        runs-on: self-hosted
+        steps:
+            - name: test
+              run: echo "Hello"
