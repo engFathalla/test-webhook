@@ -5,7 +5,7 @@ on:
 
 jobs:
     Scan_Build_Deploy:
-        runs-on: self-hosted
+        runs-on: ubuntu-22.04
         steps:
             - name: test
               run: echo "Hello"
